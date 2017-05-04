@@ -33,7 +33,7 @@ if (Tools::getIsset('secure_key'))
 	if (!empty($secure_key) && $secure_key === Tools::getValue('secure_key'))
 	{
 		$followup = new Followup();
-		if ($followup->active)
-			$followup->cronTask();
+		//if ($followup->active)
+		$followup->cronTask();
 	}
 }
